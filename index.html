@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conf Bs As</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="img_principal">
+        <header>
+            <div class="titulo">
+                <img src="./assets/img/codoacodo.png" alt="">
+                <h2>Conf Bs As</h2>
+                <nav>
+                    <a href="#">La conferencia</a>
+                    <a href="#oradores">Los oradores</a>
+                    <a href="#lugar">El lugar y la fecha</a>
+                    <a href="#alta_orador">Conviértete en orador</a>
+                    <a id="tickets" href="./pages/tickets.html">Comprar tickets</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="flotante">
+                <h1>Conf Bs As</h1>
+                <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                <div class="botones">
+                    <a class="boton_orador" href="#oradores">Quiero ser orador</a>
+                    <a class="boton_tickets" href="./pages/tickets.html">Comprar tickets</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <section id="oradores">
+        <div class="tit_oradores">
+            <h6>CONOCE A LOS</h6>
+            <h1>ORADORES</h1>
+        </div>
+        <div class="container_oradores">
+            <div class="card">
+                <img src="./assets/img/steve.jpg" alt="">
+                <div class="margin_card">
+                    <a class="boton_js" href="">JavaScript</a>
+                    <a class="boton_react" href="">React</a>
+                    <h3>Steve Jobs</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repudiandae est architecto, eius odit necessitatibus saepe cupiditate, nulla rerum quia quos sequi aliquam expedita. Aut aperiam voluptatum exercitationem consequatur beatae!</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/bill.jpg" alt="">
+                <div class="margin_card">
+                    <a class="boton_js" href="">JavaScript</a>
+                    <a class="boton_react" href="">React</a>
+                    <h3>Bill Gates</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repudiandae est architecto, eius odit necessitatibus saepe cupiditate, nulla rerum quia quos sequi aliquam expedita. Aut aperiam voluptatum exercitationem consequatur beatae!</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/ada.jpeg" alt="">
+                <div class="margin_card">
+                    <a class="boton_neg" href="">Negocios</a>
+                    <a class="boton_stups" href="">Startups</a>
+                    <h3>Ada Lovelace</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum repudiandae est architecto, eius odit necessitatibus saepe cupiditate, nulla rerum quia quos sequi aliquam expedita. Aut aperiam voluptatum exercitationem consequatur beatae!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="lugar">
+        <div class="container_lugar">
+            <div class="lugar_img">
+                <img src="./assets/img/honolulu.jpg" alt="Buenos Aires (Honolulu)">
+            </div>
+            <div class="detalle_lugar">
+                <h2>Bs As - Octubre</h2>
+                <p>Buenos Aires es la capital y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la isla (aproximadamente 600 km² de superficie).</p>
+                <a class="boton_conoce" href="">Conocé más</a>
+            </div>
+        </div>
+    </section>
+    <section id="alta_orador">
+        <div class="formulario_orador">
+            <h6>CONVIÉRTETE EN UN</h6>
+            <h1>ORADOR</h1>
+            <p>Anótate como orador para dar una <u>charla ignite</u>. Cuéntanos de qué quieres hablar!</p>
+            <div class="div_form">
+                <form action="">
+                    <p>
+                        <input type="text" id="nombre" placeholder="Nombre" size="46" minlength="3" maxlength="50" required>
+                        <input type="text" id="apellido" placeholder="Apellido" size="46" minlength="3" maxlength="50" required><br>
+                    </p>
+                    <textarea name="tema" id="tema" placeholder="Sobre qué quieres hablar?" cols="76" rows="3"></textarea>
+                    <legend>Recuerda incluir un título para tu charla</legend>
+                    <input type="submit" value="Enviar" class="boton_form">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="">Preguntas frecuentes</a></li>
+                <li><a href="">Contáctanos</a></li>
+                <li><a href="">Prensa</a></li>
+                <li><a href="">Conferencias</a></li>
+                <li><a href="">Términos y condiciones</a></li>
+                <li><a href="">Privacidad</a></li>
+                <li><a href="">Estudiantes</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
