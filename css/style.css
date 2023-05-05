@@ -8,7 +8,6 @@
 .img_principal {
     background-image: url(../assets/img/hawaii.jpg);
     background-size: cover;
-    /* background-position-y: -9vh; */
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
