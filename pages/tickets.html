@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conf Bs As</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -21,7 +22,78 @@
         </div>
     </header>
     <main>
-        Compra de Tickets
+        <div class="container text-center mt-4 p-2 px-5">
+            <div class="row mx-5 mb-1 px-5">
+                <div class="col border border-2 border-primary m-1">
+                    <p class="fs-3 fw-semibold mt-3 p-1">Estudiante</p>
+                    <p class="fs-4 p-1">Tienen un descuento</p>
+                    <p class="fs-4 fw-bold p-1">80%</p>
+                    <p class="fs-5 p-1 mb-3">* presentar documentación</p>
+                </div>
+                <div class="col border border-2 border-success m-1">
+                    <p class="fs-3 fw-semibold mt-3 p-1">Trainee</p>
+                    <p class="fs-4 p-1">Tienen un descuento</p>
+                    <p class="fs-4 fw-bold p-1">50%</p>
+                    <p class="fs-5 p-1 mb-3">* presentar documentación</p>
+                </div>
+                <div class="col border border-2 border-warning m-1">
+                    <p class="fs-3 fw-semibold mt-3 p-1">Junior</p>
+                    <p class="fs-4 p-1">Tienen un descuento</p>
+                    <p class="fs-4 fw-bold p-1">15%</p>
+                    <p class="fs-5 p-1 mb-3">* presentar documentación</p>
+                </div>
+            </div>
+            <div class="col mx-5 px-5">
+                <h5>VENTA</h5>
+                <h1>VALOR DE TICKET $200</h1>
+                <div class="row py-2">
+                    <div class="col-6 pe-1">
+                        <input type="text" class="form-control fs-5" id="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="col-6 ps-1">
+                        <input type="text" class="form-control fs-5" id="apellido" placeholder="Apellido" required>
+                    </div>
+                </div>
+                <input type="email" class="form-control my-2 fs-5" id="correo" placeholder="Correo" required>
+                <div class="row py-2">
+                    <div class="col-6 pe-1 text-start">
+                        <label for="cantidad" class="form-label fs-5">Cantidad</label>
+                        <input type="number" class="form-control fs-5" id="cantidad" placeholder="Cantidad" min="1" required>
+                    </div>
+                    <div class="col-6 ps-1 text-start">
+                        <label for="categoria" class="form-label fs-5">Categoría</label>
+                        <select class="form-select fs-5" id="categoria">
+                            <option selected>Seleccione categoría...</option>
+                            <option value="Estudiante">Estudiante</option>
+                            <option value="Trainee">Trainee</option>
+                            <option value="Junior">Junior</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="alert alert-primary text-start my-4 fs-5" role="alert" id="pagar">
+                    Total a Pagar: $
+                </div>
+            </div>
+            <div class="row mx-5 px-5">
+                <button type="button" class="btn btn-success col" onclick="borrar()">Borrar</button>
+                <div class="col-1"></div>
+                <button type="button" class="btn btn-success col" onclick="total()">Resumen</button>
+            </div>
+        </div>
     </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="">Preguntas frecuentes</a></li>
+                <li><a href="">Contáctanos</a></li>
+                <li><a href="">Prensa</a></li>
+                <li><a href="">Conferencias</a></li>
+                <li><a href="">Términos y condiciones</a></li>
+                <li><a href="">Privacidad</a></li>
+                <li><a href="">Estudiantes</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="../js/script.js"></script>
 </body>
 </html>
