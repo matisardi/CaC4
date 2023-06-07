@@ -17,6 +17,27 @@ function total() {
     }
 }
 
+function validar(formulario) {
+    if (formulario.nombre.value.trim().length == 0) {
+        alert("Debe ingresar un nombre");
+        return false;
+    }
+    if (formulario.apellido.value.trim().length == 0) {
+        alert("Debe ingresar un apellido");
+        return false;
+    }
+    if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/).test(formulario.correo.value)) {
+        alert("Debe ingresar un email válido");
+        return false;
+    }
+    if (formulario.cantidad.value <= 0) {
+        alert("Debe ingresar una cantidad mayor a 0");
+        return false;
+    }
+    total();
+    return true;
+}
+
 function borrar() {
     document.getElementById('nombre').value = "";
     document.getElementById('apellido').value = "";

@@ -43,42 +43,44 @@
                     <p class="fs-5 p-1 mb-3">* presentar documentación</p>
                 </div>
             </div>
-            <div class="col mx-5 px-5">
-                <h5>VENTA</h5>
-                <h1>VALOR DE TICKET $200</h1>
-                <div class="row py-2">
-                    <div class="col-6 pe-1">
-                        <input type="text" class="form-control fs-5" id="nombre" placeholder="Nombre" required>
+            <form action="">
+                <div class="col mx-5 px-5">
+                    <h5>VENTA</h5>
+                    <h1>VALOR DE TICKET $200</h1>
+                    <div class="row py-2">
+                        <div class="col-6 pe-1">
+                            <input type="text" class="form-control fs-5" id="nombre" placeholder="Nombre" required>
+                        </div>
+                        <div class="col-6 ps-1">
+                            <input type="text" class="form-control fs-5" id="apellido" placeholder="Apellido" required>
+                        </div>
                     </div>
-                    <div class="col-6 ps-1">
-                        <input type="text" class="form-control fs-5" id="apellido" placeholder="Apellido" required>
+                    <input type="email" class="form-control my-2 fs-5" id="correo" placeholder="Correo" required>
+                    <div class="row py-2">
+                        <div class="col-6 pe-1 text-start">
+                            <label for="cantidad" class="form-label fs-5">Cantidad</label>
+                            <input type="number" class="form-control fs-5" id="cantidad" placeholder="Cantidad" min="1" required>
+                        </div>
+                        <div class="col-6 ps-1 text-start">
+                            <label for="categoria" class="form-label fs-5">Categoría</label>
+                            <select class="form-select fs-5" id="categoria">
+                                <option selected>Seleccione categoría...</option>
+                                <option value="Estudiante">Estudiante</option>
+                                <option value="Trainee">Trainee</option>
+                                <option value="Junior">Junior</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="alert alert-primary text-start my-4 fs-5" role="alert" id="pagar">
+                        Total a Pagar: $
                     </div>
                 </div>
-                <input type="email" class="form-control my-2 fs-5" id="correo" placeholder="Correo" required>
-                <div class="row py-2">
-                    <div class="col-6 pe-1 text-start">
-                        <label for="cantidad" class="form-label fs-5">Cantidad</label>
-                        <input type="number" class="form-control fs-5" id="cantidad" placeholder="Cantidad" min="1" required>
-                    </div>
-                    <div class="col-6 ps-1 text-start">
-                        <label for="categoria" class="form-label fs-5">Categoría</label>
-                        <select class="form-select fs-5" id="categoria">
-                            <option selected>Seleccione categoría...</option>
-                            <option value="Estudiante">Estudiante</option>
-                            <option value="Trainee">Trainee</option>
-                            <option value="Junior">Junior</option>
-                        </select>
-                    </div>
+                <div class="row mx-5 px-5">
+                    <button type="button" class="btn btn-success col" onclick="borrar()">Borrar</button>
+                    <div class="col-1"></div>
+                    <button type="button" class="btn btn-success col" onclick="return validar(this.form)">Resumen</button>
                 </div>
-                <div class="alert alert-primary text-start my-4 fs-5" role="alert" id="pagar">
-                    Total a Pagar: $
-                </div>
-            </div>
-            <div class="row mx-5 px-5">
-                <button type="button" class="btn btn-success col" onclick="borrar()">Borrar</button>
-                <div class="col-1"></div>
-                <button type="button" class="btn btn-success col" onclick="total()">Resumen</button>
-            </div>
+            </form>
         </div>
     </main>
     <footer>
